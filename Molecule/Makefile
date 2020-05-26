@@ -10,12 +10,12 @@
 # CC=clang-9
 # LD=clang++-9
 
-CC=gcc
-CXX = g++
+CC=clang
+CXX = clang++
 LD = g++
-CXXFLAGS = -O2 -I . -I ../include -ffast-math -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+CXXFLAGS = -O2 -I . -I ../include -ffast-math -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 
 
-CXXFLAGS = -O2 -I . -I ../include -ffast-math -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DIW_IMPLEMENTATIONS_EXPOSED
+CXXFLAGS = -O2 -I . -I ../include -ffast-math -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DIW_IMPLEMENTATIONS_EXPOSED -std=c++11
 
 CP = cp
 
